@@ -12,7 +12,7 @@ export default function Home() {
   const [fooditem, setfooditem] = useState([]);
 
   const loaddata = async () => {
-    let response = await fetch("http://localhost:5000/api/foodData", {
+    let response = await fetch("https://food-vault-omega.vercel.app/api/foodData", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
