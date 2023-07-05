@@ -14,6 +14,12 @@ app.use((req, res, next) => {
   );
   next();
 });
+const corsOptions = {
+  origin: "*",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
