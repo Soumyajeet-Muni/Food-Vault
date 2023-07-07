@@ -1,6 +1,7 @@
+require('dotenv').config();
 const mongoose = require('mongoose')
-//const mongoURI='mongodb+srv://som4510:xOOAPTydBC20lB2a@cluster0.kbolw3z.mongodb.net/Foodvault?retryWrites=true&w=majority'
-const mongoURI=process.env.DATABASE
+//  const mongoURI='mongodb+srv://som4510:xOOAPTydBC20lB2a@cluster0.kbolw3z.mongodb.net/Foodvault?retryWrites=true&w=majority'
+  const mongoURI=process.env.DATABASE
 // const mongoDB =() =>{
 //     mongoose.connect(mongoURI,()=>{
 //      console.log("connected");
