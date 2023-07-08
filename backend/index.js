@@ -31,6 +31,7 @@ app.get('/', (req, res) => {
   app.listen(port, () => {
     console.log(`Example app listening on http://localhost:${port}`)
   })
+app.use(cors(corsOptions));
   app.use(express.json())
   app.use('/api/auth', require('./Routes/Auth'));
   
