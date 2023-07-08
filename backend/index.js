@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express')
 const app = express()
 const port = process.env.PORT||5000
+const cors = require("cors");
 
 // const mongoDB = require("./db")
 const connectDB = require('./db')
@@ -29,6 +30,7 @@ app.get('/', (req, res) => {
   app.listen(port, () => {
     console.log(`Example app listening on http://localhost:${port}`)
   })
+app.use(cors(corsOptions));
   app.use(express.json())
   app.use('/api/auth', require('./Routes/Auth'));
   
