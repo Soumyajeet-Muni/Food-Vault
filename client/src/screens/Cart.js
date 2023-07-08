@@ -2,6 +2,7 @@ import React from 'react'
 import Delete from'@mui/icons-material/Delete'
 import { useCart, useDispatchCart } from '../components/ContextReducer';
 import { useNavigate } from 'react-router-dom';
+
 export default function Cart() {
   let data = useCart();
   let navigate=useNavigate();

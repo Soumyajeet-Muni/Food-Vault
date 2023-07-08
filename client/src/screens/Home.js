@@ -6,6 +6,7 @@ import Card from "../components/Card.js";
 import img1 from "../images/img2.jpg";
 import img2 from "../images/img3.jpg";
 import img3 from "../images/chad-montano-MqT0asuoIcU-unsplash.jpg";
+// const API = process.env.REACT_APP_BACKEND;
 export default function Home() {
   const[search,setSearch] =useState('');
   const [foodcat, setfoodcat] = useState([]);

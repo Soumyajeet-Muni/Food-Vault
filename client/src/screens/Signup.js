@@ -2,6 +2,7 @@ import React ,{useState} from 'react'
 import Navbar from '../components/Navbar'
 import { useNavigate,Link } from 'react-router-dom'
 
+
 export default function Signup() {
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", geolocation: "" })
    let [address, setAddress] = useState("");
